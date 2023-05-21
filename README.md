@@ -14,7 +14,7 @@
         - .setAttribute() method to make start screen hidden on clicked 'Start Quiz'
         
 * WHEN I answer a question THEN I am presented with another question
-
+    - questions - missing buttons to make them visible and clickable -> function addElement() can create button for each question
 
 * WHEN I answer a question incorrectly THEN time is subtracted from the clock
 

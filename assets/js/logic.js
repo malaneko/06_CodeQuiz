@@ -14,7 +14,7 @@ var answerEl = document.getElementById('answer');
 var endScreenEl = document.getElementById('end-screen');   //Shows end screen
 
 var initialsEl = document.getElementById("initials");
-var feedback = document.getElementById('feedback');
+var feedbackEl = document.getElementById('feedback');
 var submitButton = document.getElementById('submit');  //
 
 // time settings
@@ -33,13 +33,20 @@ function startQuiz() {
     var startScreenEl = document.getElementById("start-screen"); // The starting screen targeted and must be turned off when the button clicked
     startButton.onclick = startQuiz; // Clicks the button (quiz starts) and then
     startScreenEl = startScreenEl.setAttribute('start-screen','hide'); // The starting screen hides as 'hide' attribute added
-    // Shows quiz questions
+    
+    // Shows quiz questions (from 'hide')
+    questionsEl.removeAttribute('hide');
+
     // Shows timer 
+
+
 
 }
 
 function clock(){
     timing-- ;  //time counted down 
+
+
 
 }
 
@@ -57,10 +64,36 @@ getQuestion.choices.forEach(function(currentValue, i,     // For each of choices
 
 // This value should be shown as a clickable button (to make a choice)
 // Missing buttons for choices - createElement()
-function addElement(){
-        var newButton = document.createElement('button');   //Creates a new button
-        var questionBtn = document.
+// function addElement(){
+var newButton = document.createElement('button');   //Creates a new button
+//         var newButton= document.
+
+//new button needs to have a role assigned - apply attribute
+newButton.setAttribute();
+
+
+
+
+// }
 }
+
+
+function questionOnclick(){
+if (choice === answerEl){
+    feedbackEl = 'Correct answer';
+} else{
+    feedbackEl = 'Inorrect answer';
+}
+
+}
+
+
+
+
+
+function highscores() {
+
+
 }
 
 
