@@ -1,4 +1,4 @@
-var quizInquiries = [
+var questions = [
     {
     question: 'What is the DOM?',
     choices: ['1: Document Object Model (DOM) is a programming interface for web documents',
