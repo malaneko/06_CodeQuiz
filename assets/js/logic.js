@@ -46,20 +46,25 @@ function clock(){
 
 
 function showQuestions(){   
-var getQuestion = questions[question]; // Takes every question from the array by index
+var getQuestion = questions[question]; // Accesses every question from the array by index [0] (question)
 // question = [0];  // Starts from index 0
 questionEl = getQuestion.question;  // Takes every next question from each nested object
 
 
 
+ // loop through questions choices - forEach(myfunction)
+getQuestion.choices.forEach(function(currentValue, i,     // For each of choices nested array of the array's questions - taken current value and its index
 
-
-
-
- // loop through questions choices  forEach(myfunction)
-
-
+// This value should be shown as a clickable button (to make a choice)
+// Missing buttons for choices - createElement()
+function addElement(){
+        var newButton = document.createElement('button');   //Creates a new button
+        var questionBtn = document.
+}
 }
 
 
-}
+
+
+//---------------
+//array.forEach(function(currentValue, index, arr), thisValue)
