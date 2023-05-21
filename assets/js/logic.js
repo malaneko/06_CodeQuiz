@@ -21,6 +21,8 @@ var submitButton = document.getElementById('submit');  //
 var timing = questions.length*10; // time for the answer
 var startTime = setInterval(clock, 1000); // Timer counts every second 
 
+// Targets array's questions
+var questionEl = document.getElementById('"question-title"');
 
 
 
@@ -41,3 +43,23 @@ function clock(){
 
 }
 
+
+
+function showQuestions(){   
+var getQuestion = questions[question]; // Takes every question from the array by index
+// question = [0];  // Starts from index 0
+questionEl = getQuestion.question;  // Takes every next question from each nested object
+
+
+
+
+
+
+
+ // loop through questions choices  forEach(myfunction)
+
+
+}
+
+
+}
