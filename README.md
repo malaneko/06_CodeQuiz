@@ -14,12 +14,23 @@
         - .setAttribute() method to make start screen hidden on clicked 'Start Quiz'
         
 * WHEN I answer a question THEN I am presented with another question
-    - questions - missing buttons to make them visible and clickable -> function addElement() can create button for each question
+    - questions - missing buttons to make them visible and clickable -> function addElement() can create a button for each question
+    - clicked answer - next questions appears 
+        - loop htrough each question of the array
+        - goes to the next question each time  (question++)
+
+
+
 
 * WHEN I answer a question incorrectly THEN time is subtracted from the clock
+     - incorrect answer - 'Incorrect answer' meggage printed and time subtracted
+
+
+
 
 
 * WHEN all questions are answered or the timer reaches 0 THEN the game is over
+
 
 * WHEN the game is over THEN I can save my initials and score
 

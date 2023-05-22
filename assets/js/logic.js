@@ -79,16 +79,25 @@ newButton.setAttribute();
 
 
 function questionOnclick(){
-if (choice === answerEl){
-    feedbackEl = 'Correct answer';
-} else{
+if (choice === answerEl){                   // If incorrect anwer given -> for example 5 seconds taken out
     feedbackEl = 'Inorrect answer';
+    timing -= 5;
+// sound incorrect.wav played
+
+} else{
+    feedbackEl = 'Correct answer';
+    // sound correct.wav palyed
 }
 
+//
+
+
 }
 
 
-
+function nextQuestion() {   //moves to the next question after the previous one answered
+    questions++;
+}
 
 
 function highscores() {
